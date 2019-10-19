@@ -1,0 +1,26 @@
+@Relation carEvaluation
+
+@attribute buyingPrice {vhigh, high, med, low}
+@attribute maintenancePrice {vhigh, high, med, low}
+@attribute numberOfDoors {2, 3, 4, 5more}
+@attribute numberOfPersons {2, 4, more}
+@attribute luggage_boot_size  {small, med, big}
+@attribute safety {low, med, high}
+@attribute acceptability {unacc, acc, good, vgood}
+
+@data
+vhigh,vhigh,2,2,small,low,unacc
+low,high,3,4,small,med,acc
+low,high,4,4,small,med,acc
+low,high,4,more,big,high,vgood
+low,high,5more,more,big,med,acc
+low,high,5more,more,big,high,vgood
+low,med,2,more,big,low,unacc
+low,med,3,more,med,med,good
+low,med,3,more,med,high,vgood
+low,med,5more,more,big,med,good
+low,med,5more,more,big,high,vgood
+low,low,3,more,big,med,good
+low,low,2,more,big,high,vgood
+low,low,5more,more,med,high,vgood
+low,low,5more,more,big,low,unacc
